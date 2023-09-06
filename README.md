@@ -22,12 +22,6 @@ cd ./dynamic-datasource/
 
 - You will find that no files are output. And an exception is thrown during the `metadataCopy` phase.
 
-- In fact, there is definitely missing GraalVM Reachability Metadata for this 
-unit test, as there are some PRs created with the Gradle Plugin located at https://github.com/oracle/graalvm-reachability-metadata/pull/381 
-and https://github.com/oracle/graalvm-reachability-metadata/pull/383 .
-
-- This reproduced example provides a direct mode configuration to bypass the `native:metadata-copy` Maven Goal. You will
-see that if you configure direct mode directly, the json file can be output normally.
 ```bash
 $ ./mvnw -PgenerateMetadata -DskipNativeTests -T1C -B -e clean test native:metadata-copy
 [INFO] Error stacktraces are turned on.
