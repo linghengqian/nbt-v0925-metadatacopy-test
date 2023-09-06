@@ -3,6 +3,8 @@
 - For https://github.com/apache/shardingsphere/issues/21347
   and https://github.com/baomidou/dynamic-datasource/issues/565 .
 
+- Also for https://github.com/graalvm/native-build-tools/issues/500 .
+
 - Execute the following command under the new Ubuntu 22.04.3 LTS instance. `./mvnw clean test` is only used to verify 
 that unit tests are available.
 
